@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="flex flex-col items-center justify-center h-screen bg-gray-100 p-4 text-center">
+		<div class="max-w-3xl">
+			<h1 class="text-4xl font-bold mb-6 text-blue-800">CMU AI Poker</h1>
+			<p class="text-xl mb-6">will return again in Spring 2026. Stay tuned for more updates.</p>
+			<div class="mt-8">
+				<a href="https://www.cmudsc.com" class="text-blue-600 hover:text-blue-800 underline text-lg">
+					cmudsc.com
+				</a>
+			</div>
+			<div class="mt-12 text-gray-700">
+				<p>Sponsors please reach out to <a href="mailto:datascienceclub@cmu.edu" class="text-blue-600 hover:text-blue-800 underline">datascienceclub@cmu.edu</a></p>
+			</div>
+		</div>
+	</main>
 </Layout>
